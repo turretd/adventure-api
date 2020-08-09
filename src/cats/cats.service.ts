@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Cat } from './cats';
 
-
 @Injectable()
 export class CatsService {
   private readonly cats: Cat[] = [];
