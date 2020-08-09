@@ -10,7 +10,6 @@ export class RoomsController {
   }
   @Get(':id')
   findOne(@Param('id', ParseIntPipe) id) {
-    console.log('CONTROLLER', id);
     return this.roomService.getRoomsById(id);
   }
 }
